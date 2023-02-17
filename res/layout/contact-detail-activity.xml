@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent">
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent" android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<TextView android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/label_contact_detail"
+			android:gravity="center_horizontal" android:layout_marginBottom="15px"
+			android:layout_marginTop="8px" android:text="@string/label_contact_detail" />
+
+		<TableLayout android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:id="@+id/table_contact_detail">
+
+			<TableRow android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/label_contact_last_name"
+					android:text="@string/label_contact_last_name" />
+
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="wrap_content" android:id="@+id/value_contact_last_name"
+					android:text="@string/label_contact_last_name" />
+			</TableRow>
+
+			<TableRow android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:id="@+id/label_contact_first_name"
+					android:text="@string/label_contact_first_name"
+					android:layout_marginRight="8px" />
+
+				<TextView android:layout_height="wrap_content"
+					android:layout_width="match_parent" android:id="@+id/value_contact_first_name"
+					android:text="@string/label_contact_first_name" />
+			</TableRow>
+
+		</TableLayout>
+
+		<ScrollView android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_marginTop="8px" android:layout_marginBottom="50px">
+
+			<LinearLayout android:id="@+id/layout_contact_detail_pictures"
+				android:orientation="vertical" android:layout_height="wrap_content"
+				android:layout_width="fill_parent">
+
+				<!-- <ProgressBar android:id="@+id/progress_list_contact_pictures" android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" android:layout_gravity="center" /> <TextView 
+					android:layout_height="wrap_content" android:layout_width="wrap_content" 
+					android:id="@+id/label_loading_list_contact_pictures" android:text="@string/label_loading_list_contact_pictures" 
+					android:layout_gravity="center" /> -->
+
+			</LinearLayout>
+
+		</ScrollView>
+
+	</LinearLayout>
+
+	<LinearLayout android:orientation="horizontal"
+		android:gravity="center_horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+
+		<Button android:layout_width="match_parent"
+			android:layout_weight=".5" android:layout_height="wrap_content"
+			android:id="@+id/button_contact_detail_back" android:text="@string/button_back" />
+
+		<Button android:layout_width="match_parent"
+			android:layout_weight=".5" android:layout_height="wrap_content"
+			android:id="@+id/button_contact_detail_edit" android:text="@string/button_edit" />
+
+	</LinearLayout>
+</RelativeLayout>
