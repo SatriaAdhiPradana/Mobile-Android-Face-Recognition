@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/layout_contact_new_dialog" android:layout_width="match_parent"
+	android:layout_height="match_parent" android:orientation="vertical">
+
+	<TableLayout android:layout_height="wrap_content"
+		android:layout_width="match_parent" android:id="@+id/table_contact_edit"
+		android:layout_marginRight="5px">
+
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/label_contact_last_name"
+				android:text="@string/label_contact_last_name" />
+
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/edit_contact_last_name"
+				android:hint="@string/hint_contact_last_name"
+				android:layout_marginLeft="5px" />
+		</TableRow>
+
+		<TableRow android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/label_contact_first_name"
+				android:text="@string/label_contact_first_name" />
+
+			<EditText android:layout_height="wrap_content"
+				android:layout_width="match_parent" android:id="@+id/edit_contact_first_name"
+				android:hint="@string/hint_contact_first_name"
+				android:layout_marginLeft="5px" />
+		</TableRow>
+
+	</TableLayout>
+
+</LinearLayout>
